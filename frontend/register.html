@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Registration | Crime Investigation System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="auth-wrapper">
+
+    <section class="auth-box">
+      <header class="auth-header">
+        <h1>Agent Registration</h1>
+        <p>Register authorized personnel for the Crime Investigation System</p>
+      </header>
+
+      <form id="registerForm" action="#" method="post">
+
+        <fieldset>
+          <legend>Agent Details</legend>
+
+          <div class="input-group">
+            <label for="agentId">Agent ID</label>
+            <input type="text" id="agentId" name="agentId" placeholder="e.g. AG-1024" required>
+          </div>
+
+          <div class="input-group">
+            <label for="codeName">Code Name</label>
+            <input type="text" id="codeName" name="codeName" placeholder="e.g. Shadow Hawk" required>
+          </div>
+
+          <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Official Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter official email address" required>
+          </div>
+
+          <div class="input-group">
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+              <option value="">Select role</option>
+              <option value="investigator">Investigator</option>
+              <option value="forensic">Forensic Expert</option>
+              <option value="analyst">Crime Analyst</option>
+              <option value="admin">Administrator</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Security Details</legend>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create password" required>
+          </div>
+
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+          </div>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Register Agent</button>
+          <button type="reset" class="btn-secondary">Clear Form</button>
+        </div>
+
+      </form>
+
+      <footer class="auth-footer">
+        <p>Already registered? <a href="login.html">Login here</a></p>
+      </footer>
+    </section>
+
+  </main>
+
+</body>
+</html>

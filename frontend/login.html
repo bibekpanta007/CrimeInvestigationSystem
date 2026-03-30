@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Login | Crime Investigation System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="auth-wrapper">
+    <section class="auth-box">
+      <header class="auth-header">
+        <h1>Agent Login</h1>
+        <p>Secure access for authorized personnel only</p>
+      </header>
+
+      <form id="loginForm" action="#" method="post">
+        <div class="input-group">
+          <label for="agentId">Agent ID</label>
+          <input type="text" id="agentId" name="agentId" placeholder="Enter Agent ID" required>
+        </div>
+
+        <div class="input-group">
+          <label for="codeName">Agent Code Name</label>
+          <input type="text" id="codeName" name="codeName" placeholder="Enter code name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Official Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter official email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="input-group">
+          <label>
+            <input type="checkbox" name="rememberMe">
+            Remember Me
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Login</button>
+        </div>
+      </form>
+
+      <footer class="auth-footer">
+        <p><a href="#">Forgot Password?</a></p>
+        <p>New agent? <a href="register.html">Register here</a></p>
+      </footer>
+    </section>
+  </main>
+
+</body>
+</html>
