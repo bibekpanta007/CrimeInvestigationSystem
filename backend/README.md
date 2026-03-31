@@ -47,17 +47,3 @@ The server will run on http://localhost:3000
 - POST /api/officers - Add officer
 - GET /api/officers - Get all officers
 
-## Database
-
-Uses SQLite database (`database.db`) with tables for users, cases, suspects, evidence, officers.
-
-## Environment Variables
-
-Create a `.env` file with:
-```
-JWT_SECRET=your_secret_key
-```
-
-## Frontend
-
-The frontend is served statically from the backend. Access the app at http://localhost:3000/login.html
