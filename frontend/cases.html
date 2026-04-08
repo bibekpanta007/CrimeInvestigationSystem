@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cases | Crime Investigation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo-area">
+      <h1>Crime Investigation System</h1>
+      <p>All Cases</p>
+    </div>
+    <div class="agent-info">
+      <p>Welcome, Agent</p>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" id="logoutLink">Logout</a>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="add-case.html">Add Case</a></li>
+      <li><a href="add-suspect.html">Suspects</a></li>
+      <li><a href="add-evidence.html">Evidence</a></li>
+      <li><a href="officers.html">Officers</a></li>
+     
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section class="tools-row">
+      <h2>Cases Management</h2>
+      <a href="add-case.html" class="btn-primary">Add New Case</a>
+    </section>
+
+    <section class="data-table">
+      <table id="allCasesTable">
+        <thead>
+          <tr>
+            <th>Case ID</th>
+            <th>Title</th>
+            <th>Crime Type</th>
+            <th>Status</th>
+            <th>Priority</th>
+            <th>Assigned Agent</th>
+            <th>Location</th>
+            <th>Reported Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="8">Loading cases...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Crime Investigation System</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
