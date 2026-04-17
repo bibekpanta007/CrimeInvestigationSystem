@@ -7,11 +7,11 @@ const jwt = require('jsonwebtoken');
 const path = require('path');
 
 const User = require('./models/user');
-const Case = require('./models/Case');
-const Suspect = require('./models/Suspect');
-const Evidence = require('./models/Evidence');
-const Officer = require('./models/Officer');
-const Report = require('./models/Report');
+const Case = require('./models/case');
+const Suspect = require('./models/suspect');
+const Evidence = require('./models/evidence');
+const Officer = require('./models/officer');
+const Report = require('./models/report');
 
 dotenv.config();
 const app = express();
