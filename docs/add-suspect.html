@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Suspect | Crime Investigation System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header class="top-header">
+<div class="logo-area">
+<h1>Crime Investigation System</h1>
+<p>Add Suspect Record</p>
+</div>
+ 
+    <div class="agent-info">
+<p>Welcome, Agent Shadow Hawk</p>
+<a href="dashboard.html">Dashboard</a>
+<a href="login.html">Logout</a>
+</div>
+</header>
+ 
+  <nav class="sidebar">
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="cases.html">Cases</a></li>
+<li><a href="add-suspect.html">Suspects</a></li>
+<li><a href="add-evidence.html">Evidence</a></li>
+<li><a href="officers.html">Officers</a></li>
+<li><a href="settings.html">Settings</a></li>
+</ul>
+</nav>
+ 
+  <main class="form-page">
+<section class="form-box">
+<header class="form-header">
+<h2>Add New Suspect</h2>
+<p>Enter suspect details into the investigation system</p>
+</header>
+ 
+      <form id="addSuspectForm" action="#" method="post" enctype="multipart/form-data">
+ 
+        <div class="input-group">
+<label for="suspectId">Suspect ID</label>
+<input type="text" id="suspectId" name="suspectId" placeholder="Enter suspect ID" required>
+</div>
+ 
+        <div class="input-group">
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+</div>
+ 
+        <div class="input-group">
+<label for="alias">Alias / Nickname</label>
+<input type="text" id="alias" name="alias" placeholder="Enter alias or nickname">
+</div>
+ 
+        <div class="input-group">
+<label for="age">Age</label>
+<input type="number" id="age" name="age" placeholder="Enter age" required>
+</div>
+ 
+        <div class="input-group">
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required>
+<option value="">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+</select>
+</div>
+ 
+        <div class="input-group">
+<label for="crimeType">Crime Type</label>
+<input type="text" id="crimeType" name="crimeType" placeholder="Enter related crime type" required>
+</div>
+ 
+        <div class="input-group">
+<label for="caseIdSuspect">Case ID (Optional)</label>
+<input type="text" id="caseIdSuspect" name="caseIdSuspect" placeholder="Enter related case ID">
+</div>
+
+        <div class="input-group">
+<label for="lastKnownLocation">Last Known Location</label>
+<input type="text" id="lastKnownLocation" name="lastKnownLocation" placeholder="Enter last known location">
+</div>
+ 
+        <div class="input-group">
+<label for="riskLevel">Risk Level</label>
+<select id="riskLevel" name="riskLevel" required>
+<option value="">Select risk level</option>
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+</select>
+</div>
+ 
+        <div class="input-group">
+<label for="status">Status</label>
+<select id="status" name="status" required>
+<option value="">Select status</option>
+<option value="wanted">Wanted</option>
+<option value="under-surveillance">Under Surveillance</option>
+<option value="detained">Detained</option>
+<option value="released">Released</option>
+</select>
+</div>
+ 
+        <div class="input-group">
+<label for="suspectImage">Suspect Image</label>
+<input type="file" id="suspectImage" name="suspectImage" accept="image/*">
+</div>
+ 
+        <div class="input-group">
+<label for="description">Description</label>
+<textarea id="description" name="description" placeholder="Enter suspect description" rows="4"></textarea>
+</div>
+ 
+        <div class="form-actions">
+<button type="submit">Save Suspect</button>
+<button type="reset">Clear Form</button>
+</div>
+ 
+      </form>
+</section>
+
+<section class="form-box">
+  <header class="form-header">
+    <h2>All Suspects</h2>
+    <p>View all suspects in the system.</p>
+  </header>
+  <table id="allSuspectsTable" class="data-table">
+    <thead>
+      <tr><th>Suspect ID</th><th>Name</th><th>Alias</th><th>Crime Type</th><th>Status</th><th>Risk</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</section>
+</main>
+ 
+  <footer class="dashboard-footer">
+<p>Crime Investigation System</p>
+</footer>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>

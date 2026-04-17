@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Crime Investigation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="logo-area">
+      <h1>Crime Investigation System</h1>
+      <p>Agent Dashboard</p>
+    </div>
+
+    <div class="agent-info">
+      <p>Welcome, Agent Shadow Hawk</p>
+      <a href="login.html">Logout</a>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="cases.html">Cases</a></li>
+      <li><a href="add-suspect.html">Suspects</a></li>
+      <li><a href="add-evidence.html">Evidence</a></li>
+      <li><a href="officers.html">Officers</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+
+  <main class="dashboard-container">
+
+    <section class="dashboard-header">
+      <h2>Dashboard Overview</h2>
+      <p>Monitor active investigations and system records</p>
+    </section>
+
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>24</h3>
+        <p>Open Cases</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>12</h3>
+        <p>Suspects Under Watch</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>48</h3>
+        <p>Evidence Records</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>8</h3>
+        <p>Active Agents</p>
+      </div>
+    </section>
+
+    <section class="recent-cases">
+      <h2>Recent Cases</h2>
+      <table border="1">
+        <tr>
+          <th>Case ID</th>
+          <th>Title</th>
+          <th>Crime Type</th>
+          <th>Status</th>
+          <th>Assigned Agent</th>
+        </tr>
+        <tr>
+          <td>C-1001</td>
+          <td>Downtown Bank Robbery</td>
+          <td>Robbery</td>
+          <td>Open</td>
+          <td>Shadow Hawk</td>
+        </tr>
+        <tr>
+          <td>C-1002</td>
+          <td>Missing Businessman</td>
+          <td>Missing Person</td>
+          <td>Under Investigation</td>
+          <td>Night Fox</td>
+        </tr>
+        <tr>
+          <td>C-1003</td>
+          <td>Warehouse Fire</td>
+          <td>Arson</td>
+          <td>Closed</td>
+          <td>Steel Wolf</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="quick-actions">
+      <h2>Quick Actions</h2>
+      <div class="action-buttons">
+        <a href="add-case.html">Add New Case</a>
+        <a href="add-suspect.html">Add Suspect</a>
+        <a href="add-evidence.html">Add Evidence</a>
+        <a href="reports.html">Generate Report</a>
+      </div>
+    </section>
+
+    <section class="alerts-section">
+      <h2>System Alerts</h2>
+      <ul>
+        <li>New evidence uploaded for Case C-1001</li>
+        <li>Case C-1002 status changed to Under Investigation</li>
+        <li>Agent Night Fox submitted a new field report</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>Crime Investigation System Dashboard</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
