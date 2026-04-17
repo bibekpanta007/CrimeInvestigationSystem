@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://crimeinvestigationsystem.onrender.com/api';
 
 async function apiCall(endpoint, method = 'GET', body = null) {
   const options = { method, headers: { 'Content-Type': 'application/json' } };
